@@ -1,0 +1,337 @@
+/** fornt import **/
+
+@import url("font-awesome.min.css");
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/roboto-regular.eot");
+  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular.svg#roboto-regular") format("svg"), url("../fonts/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../fonts/roboto-bold.eot");
+  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold.svg#roboto-bold") format("svg"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container-fluid {
+  padding: 0px;
+  /* font-family: "roboto-regular"; */
+}
+
+/** header start **/
+
+header {
+  height: 40px;
+  background-color: #0846a9;
+  position: sticky;
+  top: 0px;
+  z-index: 150;
+  color: #ffffff;
+  padding: 0px 16px;
+}
+
+.headerCard {
+  display: flex;
+}
+
+.logoArea h1 {
+  margin: 0;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.logoArea span {
+  font-size: 9px;
+  position: relative;
+  top: -10px;
+  letter-spacing: 0.5px;
+}
+
+.rightsideArea {
+  margin-left: auto;
+  padding-top: 6px;
+}
+
+.rightsideArea ul li {
+  display: inline-block;
+  margin-left: 8px;
+  position: relative;
+}
+
+.rightsideArea ul li span {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #f75858;
+  position: absolute;
+  top: 3px;
+  left: 9px;
+}
+
+.userProfile p {
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+.userProfile p img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  margin-right: 4px;
+}
+
+.userProfile .fa {
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+}
+
+/** header end **/
+
+/** footer start **/
+
+footer {
+  height: 20px;
+  background-color: #f8f9fb;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  padding: 0px 16px;
+}
+
+footer p {
+  font-size: 10px;
+  color: rgba(51, 51, 51, 1);
+  line-height: 20px;
+}
+
+footer p span {
+  font-weight: 600;
+}
+
+/** footer end **/
+
+/** common style start **/
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.fa {
+  font-size: 14px !important;
+}
+
+input, button, select, optgroup, textarea {
+  font-weight: 600;
+}
+
+.iconsSvg {
+  width: 16px;
+  height: 16px;
+}
+
+.iconsSvgWidth {
+  width: 22px;
+  height: 22px;
+}
+
+.btn {
+  font-size: 10px;
+  margin-right: 8px;
+  height: 26px;
+  padding: 0px 16px;
+}
+
+.modal-title {
+  font-size: 1rem;
+}
+
+.btn-primary-save {
+  background-color: #01A450;
+  color: #ffffff;
+}
+
+.btn-outline-primary-cancel {
+  background-color: #ffffff;
+  border: 1px solid #33333366;
+}
+
+.btn .fa {
+  font-size: 10px !important;
+}
+
+.btn-primary, .btn-primary:hover {
+  background-color: #0078D4;
+}
+
+.btn-outline-primary {
+  color: #0078D4;
+  border-color: #0078D4;
+}
+
+.btn-outline-primary:hover {
+  background-color: transparent;
+  color: #0078D4;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  cursor: default;
+  background-color: #c8c6c4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8c8b8a;
+  border-radius: 2px;
+  /* outline      : 1px solid slategrey; */
+}
+
+.breadcrumb {
+  padding: 0;
+  background: transparent;
+  font-size: 12px;
+}
+
+:hover {
+  transition: 0.5s;
+}
+
+/** common style end **/
+
+/** container-fluidInner start **/
+
+.container-fluidInner {
+  display: flex;
+}
+
+/** container-fluidInner end **/
+
+/** filter area start **/
+
+.filterArea {
+  margin-bottom: 16px;
+}
+
+.tab-pane {
+  position: relative;
+}
+
+.tab-pane .filterArea {
+  position: absolute;
+  z-index: 1;
+}
+
+#Queries .filterArea, #BookProperties .filterArea, #Milestone .filterArea {
+  position: relative;
+}
+
+/** filter area end **/
+
+/** table start **/
+
+.tableArea {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.tableFixHead {
+  overflow: auto;
+  max-height: 305px;
+}
+
+table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  min-width: 125px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead tr th {
+  background-color: #f3f2f1;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 2px;
+}
+
+th, td, .table th, .table td {
+  padding: 0px 16px;
+  color: #80807f;
+  font-size: 12px;
+}
+
+tbody tr {
+  background-color: #f8f9fb;
+  border-top: 4px solid #fff;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 2px;
+}
+
+/**table end **/
+
+.fileDrop {
+  width: 450px;
+  height: 160px;
+  border: 2px dashed rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 16px;
+  background-color: #f5f5f5;
+}
+
+.fileDropinner {
+  width: 200px;
+  font-size: 16px;
+}
+
+.clickBrowser {
+  font-size: 12px;
+  width: 90px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #3b85c3;
+  color: #fff;
+  position: relative;
+  line-height: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.clickBrowser input {
+  position: absolute;
+  cursor: pointer;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+
+.fileDropinner hr {
+  width: 50%;
+  position: relative;
+}
+
+.fileDropinner hr:before {
+  content: "or";
+  position: absolute;
+  top: -14px;
+  background: #f5f5f5;
+  left: 38%;
+  padding: 2px;
+  font-size: 13px;
+}
