@@ -245,7 +245,7 @@ input, button, select, optgroup, textarea {
 
 .tableFixHead {
   overflow: auto;
-  max-height: 305px;
+  max-height: 160px;
 }
 
 table thead th {
@@ -271,6 +271,10 @@ th, td, .table th, .table td {
   padding: 0px 16px;
   color: #80807f;
   font-size: 12px;
+}
+
+td p {
+  margin-bottom: 0px;
 }
 
 tbody tr {
@@ -348,10 +352,13 @@ tbody tr {
 }
 
 .jobAreaInner {
-  display: flex;
   box-shadow: 0px 0px 4px 2px #e1e1e1;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+.jobAreaInnerDiv {
+  display: flex;
 }
 
 .jobAreaInnerLeft {
@@ -383,6 +390,7 @@ tbody tr {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 12px !important;
+  cursor: pointer;
 }
 
 .jobDetails {
@@ -559,6 +567,60 @@ p strong {
   height: 63vh;
   overflow: auto;
   padding: 2px;
+}
+
+.bookDetailTabList a {
+  color: #333333;
+  text-decoration: none;
+  padding: 6px 16px;
+}
+
+.bookDetailTabList {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.bookDetailTabList li {
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+  padding: 6px 0px;
+}
+
+.bookDetailTabList {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.bookDetailTabList li:hover {
+  background-color: #f7f7f7;
+}
+
+.bookDetailTab {
+  margin-bottom: 12px;
+}
+
+.bookDetailTabList li a.active:before {
+  content: '';
+  height: 2px;
+  background-color: #0078D4;
+  width: 100%;
+  bottom: -1px;
+  position: absolute;
+  left: 0px;
+}
+
+.jobAreaInnerDetails {
+  border-top: 1px solid #e1e1e1;
+}
+
+.jobAreaInnerDetails {
+  margin: 0;
+  padding: 8px 26px;
+  display: none;
+}
+
+.jobAreaInner.active .jobAreaInnerDetails {
+  display: block;
 }
 
 /* @-webkit-keyframes pulse {
