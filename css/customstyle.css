@@ -4,7 +4,11 @@
 @font-face {
   font-family: "roboto-regular";
   src: url("../fonts/roboto-regular.eot");
-  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular.svg#roboto-regular") format("svg"), url("../fonts/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.woff2") format("woff2");
+  src: url("../fonts/roboto-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto-regular.svg#roboto-regular") format("svg"),
+    url("../fonts/roboto-regular.ttf") format("truetype"),
+    url("../fonts/roboto-regular.woff") format("woff"),
+    url("../fonts/roboto-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +16,11 @@
 @font-face {
   font-family: "roboto-bold";
   src: url("../fonts/roboto-bold.eot");
-  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold.svg#roboto-bold") format("svg"), url("../fonts/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold.woff2") format("woff2");
+  src: url("../fonts/roboto-bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/roboto-bold.svg#roboto-bold") format("svg"),
+    url("../fonts/roboto-bold.ttf") format("truetype"),
+    url("../fonts/roboto-bold.woff") format("woff"),
+    url("../fonts/roboto-bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -129,7 +137,11 @@ ul {
   font-size: 14px !important;
 }
 
-input, button, select, optgroup, textarea {
+input,
+button,
+select,
+optgroup,
+textarea {
   font-weight: 600;
 }
 
@@ -155,7 +167,7 @@ input, button, select, optgroup, textarea {
 }
 
 .btn-primary-save {
-  background-color: #01A450;
+  background-color: #01a450;
   color: #ffffff;
 }
 
@@ -168,18 +180,19 @@ input, button, select, optgroup, textarea {
   font-size: 10px !important;
 }
 
-.btn-primary, .btn-primary:hover {
-  background-color: #0078D4;
+.btn-primary,
+.btn-primary:hover {
+  background-color: #0078d4;
 }
 
 .btn-outline-primary {
-  color: #0078D4;
-  border-color: #0078D4;
+  color: #0078d4;
+  border-color: #0078d4;
 }
 
 .btn-outline-primary:hover {
   background-color: transparent;
-  color: #0078D4;
+  color: #0078d4;
 }
 
 ::-webkit-scrollbar {
@@ -210,7 +223,7 @@ input, button, select, optgroup, textarea {
 /** container-fluidInner start **/
 
 .container-fluidInner {
-  display: flex;
+  padding: 0px 36px;
 }
 
 /** container-fluidInner end **/
@@ -230,7 +243,9 @@ input, button, select, optgroup, textarea {
   z-index: 1;
 }
 
-#Queries .filterArea, #BookProperties .filterArea, #Milestone .filterArea {
+#Queries .filterArea,
+#BookProperties .filterArea,
+#Milestone .filterArea {
   position: relative;
 }
 
@@ -267,7 +282,10 @@ thead tr th {
   border-radius: 2px;
 }
 
-th, td, .table th, .table td {
+th,
+td,
+.table th,
+.table td {
   padding: 0px 16px;
   color: #80807f;
   font-size: 12px;
@@ -286,18 +304,19 @@ tbody tr {
 .fileDrop {
   width: 450px;
   height: 160px;
-  border: 2px dashed rgba(0, 0, 0, .3);
+  border: 2px dashed #b7b7b7;
   border-radius: 5px;
   text-align: center;
   position: relative;
   margin: 0 auto;
   margin-top: 16px;
-  background-color: #f5f5f5;
+  background-color: #f8f9fb;
 }
 
 .fileDropinner {
   width: 200px;
   font-size: 16px;
+  padding-top: 36px;
 }
 
 .clickBrowser {
@@ -305,7 +324,7 @@ tbody tr {
   width: 90px;
   height: 30px;
   border-radius: 4px;
-  background-color: #3b85c3;
+  background-color: #0078d4;
   color: #fff;
   position: relative;
   line-height: 30px;
@@ -330,8 +349,31 @@ tbody tr {
   content: "or";
   position: absolute;
   top: -14px;
-  background: #f5f5f5;
+  background: #f8f9fb;
   left: 38%;
   padding: 2px;
   font-size: 13px;
+}
+.jobNumTitle {
+  margin: 5px 0px;
+  color: #a9a9a9;
+  font-size: 13px;
+}
+.jobsArea {
+  margin: 16px 0px;
+}
+
+.jobAreaInner {
+  display: flex;
+  box-shadow: 0px 0px 4px 2px #e1e1e1;
+    border-radius: 5px;
+}
+.jobAreaInnerLeft {
+  width: 20%;
+}
+.jobAreaInnerCenter {
+  width: 50%;
+}
+.jobAreaInnerRight{
+  width:30%;
 }
