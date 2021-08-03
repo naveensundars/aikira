@@ -19,7 +19,7 @@
 
 .container-fluid {
   padding: 0px;
-  /* font-family: "roboto-regular"; */
+  font-family: "roboto-regular";
 }
 
 /** header start **/
@@ -213,6 +213,23 @@ input, button, select, optgroup, textarea {
   padding: 0px 36px;
 }
 
+.subHeader {
+  width: 80px;
+  text-align: center;
+  margin: 16px 0px;
+}
+
+.subHeader h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.subHeader span {
+  font-size: 6px;
+  position: relative;
+  top: -14px;
+}
+
 /** container-fluidInner end **/
 
 /** filter area start **/
@@ -297,6 +314,7 @@ tbody tr {
   margin: 0 auto;
   margin-top: 16px;
   background-color: #f8f9fb;
+  display: flex;
 }
 
 .fileDropinner {
@@ -305,12 +323,18 @@ tbody tr {
   padding-top: 36px;
 }
 
+.fileDrop img {
+  width: 200px;
+  height: 140px;
+  margin-top: 16px;
+}
+
 .clickBrowser {
   font-size: 12px;
   width: 90px;
   height: 30px;
   border-radius: 4px;
-  background-color: #0078d4;
+  background-color: #4D8DF8;
   color: #fff;
   position: relative;
   line-height: 30px;
@@ -359,19 +383,23 @@ tbody tr {
 
 .jobAreaInnerDiv {
   display: flex;
+  overflow: auto;
 }
 
 .jobAreaInnerLeft {
   width: 25%;
+  min-width: 350px;
   display: flex;
 }
 
 .jobAreaInnerCenter {
-  width: 45%;
+  width: 42%;
+  min-width: 600px;
 }
 
 .jobAreaInnerRight {
-  width: 30%;
+  width: 33%;
+  min-width: 480px;
   padding: 6px 0px;
   position: relative;
 }
@@ -408,6 +436,7 @@ tbody tr {
 
 .jobDetails h2 {
   font-size: 16px;
+  font-family: "roboto-bold";
 }
 
 .completeProgressBar {
@@ -485,12 +514,12 @@ p strong {
 }
 
 .progressStage .circleAreaTime {
-  background-color: #0078d4;
+  background-color: #0078D4;
   animation: pulse-blue 2s infinite;
 }
 
 .progressStage p {
-  color: #0078d4 !important;
+  color: #0078D4 !important;
 }
 
 .stageArea::before {
@@ -524,12 +553,18 @@ p strong {
 
 .iconsAction li {
   display: inline-block;
-  padding: 4px 12px;
-  border-radius: 5px;
+  padding: 4px 6px;
+  border-radius: 4px;
 }
 
 .iconsAction {
   margin-top: 12px;
+}
+
+.iconsAction img {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
 }
 
 .iconsAction li.active {
@@ -629,12 +664,10 @@ p strong {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
   }
-  
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 6px rgba(52, 172, 224, 0);
   }
-  
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
